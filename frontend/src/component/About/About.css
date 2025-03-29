@@ -1,0 +1,108 @@
+/* General Styles */
+.personal-education-section {
+  margin-top: 50px;
+  padding: 80px 0;
+}
+
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.text-content {
+  flex: 1 1 45%;
+}
+
+.image-content {
+  flex: 1 1 45%;
+}
+
+/* Section Title */
+.section-title h2 {
+  font-size: 36px;
+  color: #1A2844;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.section-title .lead {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Description */
+.description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+/* Image Grid */
+.image-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.image-large {
+  flex: 1 1 60%;
+}
+
+.image-large img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.image-small {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-small img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.img2{
+  margin-top: 50px;
+}
+
+/* Image with Overlay */
+.image-with-overlay {
+  position: relative;
+}
+
+.image-with-overlay img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .text-content,
+  .image-content {
+    flex: 1 1 100%;
+  }
+
+  .image-grid {
+    flex-direction: column;
+  }
+
+  .image-large,
+  .image-small {
+    flex: 1 1 100%;
+  }
+}

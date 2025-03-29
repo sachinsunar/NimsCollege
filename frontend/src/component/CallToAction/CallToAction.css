@@ -1,0 +1,121 @@
+/* CallToAction.css */
+
+/* Section Styling */
+.call-to-action {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -50px; /
+    /* Adjust padding as needed */
+  }
+  
+  /* Container Styling */
+  .cta-container {
+    max-width: 1200px; /* Adjust container width */
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding for smaller screens */
+  }
+  
+  /* Row Styling */
+  .cta-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Content Styling */
+  .cta-content {
+    width: 100%;
+  }
+  
+  /* Box Styling */
+  .cta-box {
+    background-color: #a61d37; /* Primary color */
+    padding: 15px 20px 5px 20px;
+    border-radius: 5px;
+
+  }
+  
+  /* Inner Row Styling */
+  .cta-inner-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  /* Text Styling */
+  .cta-text {
+    flex: 1;
+    min-width: 250px; /* Prevent text from shrinking too much */
+    margin-bottom: 20px; /* Add space between text and form on smaller screens */
+  }
+  
+  .cta-text h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+ 
+  }
+  
+  .cta-text p {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Form Styling */
+  .cta-form {
+    flex: 1;
+    min-width: 250px; /* Prevent form from shrinking too much */
+  }
+  
+  .cta-form form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cta-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .cta-form button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .cta-form button:hover {
+    color: #ddd;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .cta-inner-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cta-form {
+      width: 100%;
+    }
+  
+    .cta-form form {
+      width: 100%;
+    }
+  
+    .cta-form input {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .cta-form button {
+      width: 100%;
+      text-align: left;
+    }
+  }

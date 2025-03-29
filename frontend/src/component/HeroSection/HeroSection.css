@@ -1,0 +1,85 @@
+/* actionSection.css */
+
+/* Section Styling */
+.action-section {
+    position: relative;
+    padding: 100px 20px; /* Adjust padding as needed */
+    background-image: url('../../assets/img/bloghero.png'); /* Background image */
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed; /* Creates the parallax effect */
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    margin: 50px 0;
+    
+
+
+  }
+  
+  /* Overlay Styling */
+  .action-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important; 
+    height: 100% ;
+    background: rgba(26, 40, 68, 0.705); /* Black overlay with 80% opacity */
+    z-index: 1;
+  }
+  
+  /* Container Styling */
+  .action-container {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    max-width: 1200px; /* Adjust container width */
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding for smaller screens */
+  }
+  
+  /* Content Styling */
+  .action-content {
+    max-width: 800px; /* Adjust content width */
+    margin: 0 auto;
+  }
+  
+  /* Subtitle Styling */
+  .action-subtitle {
+    display: block;
+    font-size: 1.25rem; /* Adjust font size */
+    font-weight: 400; /* Normal weight */
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Title Styling */
+  .action-title {
+    font-size: 2.5rem; /* Adjust font size */
+    font-weight: 700; /* Bold weight */
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  /* Buttons Styling */
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  }
+  
+
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .action-title {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+  
+    .action-subtitle {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  
+
+  }

@@ -1,0 +1,75 @@
+/* Styling for the Principal Message Slider */
+.message-container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    color: #333;
+  }
+  
+  .message-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .message-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .message-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .message-content {
+    text-align: left;
+    max-width: 60%;
+  }
+  
+  .message-person {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .message-position {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .message-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Slider Dots */
+  .dots {
+    margin-top: 15px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #555;
+  }
+  

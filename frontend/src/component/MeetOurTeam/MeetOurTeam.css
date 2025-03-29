@@ -1,0 +1,117 @@
+/* MeetOurTeam.css */
+
+/* General Styles */
+.meet-our-team {
+  padding: 80px 0;
+  margin-bottom: 150px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #1a2844;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Team Grid */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.team-member {
+  flex: 1 1 calc(33.333% - 30px);
+  max-width: calc(33.333% - 30px);
+  position: relative;
+  text-align: center;
+}
+
+.team-img {
+  position: relative;
+  z-index: 1;
+}
+
+.team-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.team-info {
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover .team-info {
+  transform: translate(-50%, -10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.team-info .team-name {
+  font-size: 1.5rem;
+  color: #1a2844;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.team-info .team-role {
+  font-size: 1rem;
+  color: #1a2844;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links li,
+.social-links li a {
+  color: #1a2844;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #a61d37; /* Primary color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-member {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-member {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

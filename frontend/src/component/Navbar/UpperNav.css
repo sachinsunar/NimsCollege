@@ -1,0 +1,56 @@
+/* Upper Navbar Container */
+.upper-nav {
+    background-color: #1a2844 !important; /* Blue-800 equivalent */
+    color: white;
+    padding: 1rem 15rem; /* p-4 and ps-10 equivalent */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px; /* text-sm equivalent */
+  }
+  
+  /* Upper Navbar Content */
+  .upper-nav-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* space-x-4 equivalent */
+  }
+  
+  /* Upper Navbar Social Icons */
+  .upper-nav-social {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* space-x-4 equivalent */
+  }
+  
+  /* Social Icons */
+  .social-icon {
+    color: white;
+    padding-right: 0.75rem; /* pr-3 equivalent */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #d1d5db; /* hover:text-gray-300 equivalent */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 640px) {
+    .upper-nav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .upper-nav-content {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem; /* max-sm:mt-2 equivalent */
+    }
+  
+    .upper-nav-social {
+      gap: 0.5rem;
+    }
+  }
