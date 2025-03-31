@@ -17,12 +17,12 @@ const Sidebar = () => {
                     <p className='hidden md:block'>Add Photos to Gallery</p>
                 </NavLink>
 
-                <NavLink to='/list' className='flex items-center gap-3 border-2 border-gray-300 border-r-0 px-3 py-2 rounded-1'>
+                <NavLink to='/listnews' className='flex items-center gap-3 border-2 border-gray-300 border-r-0 px-3 py-2 rounded-1'>
                     <img src={assets.order_icon} alt="" />
                     <p className='hidden md:block'>List News/Notice</p>
                 </NavLink>
 
-                <NavLink to='/listgallery' className='flex items-center gap-3 border-2 border-gray-300 border-r-0 px-3 py-2 rounded-1'>
+                <NavLink to='/listphotos' className='flex items-center gap-3 border-2 border-gray-300 border-r-0 px-3 py-2 rounded-1'>
                     <img src={assets.order_icon} alt="" />
                     <p className='hidden md:block'>List Gallery</p>
                 </NavLink>

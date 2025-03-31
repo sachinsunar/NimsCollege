@@ -2,19 +2,17 @@ import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import { Routes, Route } from 'react-router-dom'
-import List from './pages/List'
-import Orders from './pages/Orders'
-import Add from './pages/Add'
 import Login from './components/Login'
 import { Toaster } from 'react-hot-toast';
-import Subscriber from './pages/Subscriber'
-import Users from './pages/Users'
-import Loader from './components/Loader'
+import Loader from './components/Loader.jsx'
 import axios from 'axios'
+import AddPhotos from './pages/AddPhotos.jsx'
+import ListNews from './pages/ListNews.jsx'
+import ListPhotos from './pages/ListPhotos.jsx'
+import AddNews from './pages/AddNews.jsx'
 
 
 export const backendUrl = import.meta.env.VITE_BACKEND_URL;
-export const currency = "Rs."
 
 const App = () => {
 
@@ -74,11 +72,10 @@ const App = () => {
 
           <div className='w-[70%] mx-auto ml-[max(5vw, 25px)] my-8 text-gray-600 text-base'>
             <Routes>
-              <Route path='/add' element={<Add token={token} />} />
-              <Route path='/list' element={<List token={token} />} />
-              <Route path='/orders' element={<Orders token={token} />} />
-              <Route path='/subscriber' element={<Subscriber token={token} />} />
-              <Route path='/users' element={<Users token={token} />} />
+              <Route path='/addnews' element={<AddNews token={token} />} />
+              <Route path='/addphotos' element={<AddPhotos token={token} />} />
+              <Route path='/listnews' element={<ListNews token={token} />} />
+              <Route path='/listphotos' element={<ListPhotos token={token} />} />
             </Routes>
           </div>
         </div>
